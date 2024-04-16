@@ -115,14 +115,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar or lockscreen to turn off the display</string>
 
-    <!-- Media art -->
-    <string name="lockscreen_media_art_options_title">Media cover art</string>
-    <string name="media_art_title">Media cover art</string>
-    <string name="media_art_summary">Display media cover art when available</string>
-
-    <!-- Lock screen cover art -->
-    <string name="lockscreen_media_blur_title">Media art blur level</string>
-
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Clock &amp; date</string>
     <string name="status_bar_clock_summary">Customize clock &amp; date</string>
