@@ -33,7 +33,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 import android.provider.Settings;
 import com.android.settings.R;
 
@@ -74,7 +74,7 @@ public class Statusbar extends SettingsPreferenceFragment implements
     private static final int BATTERY_PERCENT_RIGHT = 2;
     private static final int BATTERY_PERCENT_LEFT = 3;
 
-    private SwitchPreference mBatteryTextCharging;
+    private SwitchPreferenceCompat mBatteryTextCharging;
     private SystemSettingListPreference mBatteryPercent;
     private SystemSettingListPreference mBatteryStyle;
     private SystemSettingListPreference mStatusBarClock;
@@ -105,7 +105,7 @@ public class Statusbar extends SettingsPreferenceFragment implements
         mBatteryPercent = (SystemSettingListPreference) findPreference(KEY_STATUS_BAR_SHOW_BATTERY_PERCENT);
         mBatteryPercent.setOnPreferenceChangeListener(this);
         handleBatteryPercent(batterystyle, batterypercent);
-        mBatteryTextCharging = (SwitchPreference) findPreference(KEY_STATUS_BAR_BATTERY_TEXT_CHARGING);
+        mBatteryTextCharging = (SwitchPreferenceCompat) findPreference(KEY_STATUS_BAR_BATTERY_TEXT_CHARGING);
         mBatteryTextCharging.setEnabled(batterystyle != BATTERY_STYLE_TEXT &&
                 (batterypercent == BATTERY_PERCENT_INSIDE || batterypercent == BATTERY_PERCENT_HIDDEN));
     }

@@ -31,7 +31,7 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.bliss.BlissUtils;
@@ -48,7 +48,7 @@ import java.util.List;
 public class PowerMenu extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private SwitchPreference mPowermenuTorch;
+    private SwitchPreferenceCompat mPowermenuTorch;
 
     @Override
     public void onCreate(Bundle icicle) {

@@ -30,7 +30,7 @@ import android.os.ParcelFileDescriptor;
 import android.os.UserHandle;
 import android.provider.Settings;
 
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;

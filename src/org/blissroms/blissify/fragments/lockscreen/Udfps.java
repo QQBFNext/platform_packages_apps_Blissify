@@ -46,7 +46,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 import com.bliss.support.preferences.SystemSettingSwitchPreference;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.bliss.BlissUtils;

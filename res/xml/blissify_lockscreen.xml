@@ -24,7 +24,7 @@
     <PreferenceCategory
         android:title="@string/general_category">
 
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:key="fingerprint_success_vib"
             android:title="@string/fprint_sucess_vib_title"
             android:summary="@string/fprint_sucess_vib_summary"

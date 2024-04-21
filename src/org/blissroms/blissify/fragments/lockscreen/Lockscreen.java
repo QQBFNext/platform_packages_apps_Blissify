@@ -30,7 +30,7 @@ import android.os.ParcelFileDescriptor;
 import android.os.UserHandle;
 import android.provider.Settings;
 
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -70,7 +70,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 
     private Context mContext;
     private PreferenceCategory mUdfpsCategory;
-    private SwitchPreference mFingerprintVib;
+    private SwitchPreferenceCompat mFingerprintVib;
     private Preference mWeather;
     private OmniJawsClient mWeatherClient;
 
@@ -83,7 +83,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         final PreferenceScreen prefSet = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();
 
-        mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
+        mFingerprintVib = (SwitchPreferenceCompat) findPreference(FINGERPRINT_VIB);
         mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
         mFingerprintVib.setOnPreferenceChangeListener(this);
