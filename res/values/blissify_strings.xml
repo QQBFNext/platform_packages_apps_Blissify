@@ -101,7 +101,7 @@
     <string name="usb_default_config_summary">Выбрать свой режим USB по умолчанию</string>
 
     <!-- Show clipboard overlay -->
-    <string name="show_clipboard_overlay_title">Оповещение буфера обменаShow clipboard overlay</string>
+    <string name="show_clipboard_overlay_title">Оповещение буфера обмена</string>
     <string name="show_clipboard_overlay_summary">Показывать наложение в левой нижней части экрана когда что-то скопировано в буфер обмена</string>
 
     <!-- Ignore window secure -->
